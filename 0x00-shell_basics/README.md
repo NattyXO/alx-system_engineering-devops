@@ -1,0 +1,2 @@
+pwd
+check current directory
