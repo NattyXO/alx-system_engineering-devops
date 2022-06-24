@@ -1,2 +1,2 @@
 #!/bin/bash
-chown 489 hello
+chmod ugo+x hello
