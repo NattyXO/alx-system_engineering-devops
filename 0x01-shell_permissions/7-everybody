@@ -1,2 +1,2 @@
 #!/bin/bash
-chmown 751 hello
+chown 751 hello
