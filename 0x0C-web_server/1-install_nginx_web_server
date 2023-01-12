@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 # Script that installs Nginx server
-apt-get -y update
-apt-get -y install nginx
-echo "Holberton School" > /var/www/html/index.nginx-debian.html
-service nginx start
+
+# update package list
+apt-get update -y
+
+# install nginx
+apt-get install nginx -y
+
+# start nginx service
+/etc/init.d/nginx start
+
+# check if nginx is listening on port 80
+netstat -tuln | grep :80
+
+# check if nginx is returning 'Hello World!'
+curl localhost
