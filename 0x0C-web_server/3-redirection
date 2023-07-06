@@ -2,36 +2,39 @@
 # Configures a new ubuntu machine by installing
 # Nginx where it should be listening on port 80
 # Serve a page that would return a Hello World string
+#
+# colors
+blue='\e[1;34m'
+brown='\e[0;33m'
+green='\e[1;32m'
+reset='\033[0m'
 
-echo "Updating and installing Nginx"
+echo -e "${blue}Updating and installing ${brown}Nginx${blue}.${reset}\n"
 sudo apt-get update -y -qq && \
-	sudo apt-get install nginx -y
+	 sudo apt-get install nginx -y
 
-echo "Setting up some minor stuff."
+echo -e "\n${blue}Setting up some minor stuff.${reset}\n"
 
 # starting nginx service
-sudo /etc/init.d/nginx start
+sudo service nginx start
 
 # allowing nginx on firewall
-sudo ufw allow 80/tcp
+sudo ufw allow 'Nginx HTTP'
 
 # Give the user ownership to website files for easy editing
-sudo chown -R www-data:www-data /var/www/html
-sudo chmod -R 755 /var/www/html
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+
+# Backup default index
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
 
 # Creating new index
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
 
-# Setting up redirect
-echo "server {
-    listen 80;
-    server_name example.com;
-    location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-    }
-}" | sudo tee /etc/nginx/conf.d/redirect.conf > /dev/null
+# Setting up /redirect_me to a youtube video
+sudo sed -i '24i\	rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
 
 # Restarting nginx
-sudo /etc/init.d/nginx restart
+sudo service nginx restart
 
-echo "Completed."
+echo -e "\n${green}Completed.${reset} ✅\n"

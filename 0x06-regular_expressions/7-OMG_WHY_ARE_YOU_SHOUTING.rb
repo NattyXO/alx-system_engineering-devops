@@ -1,2 +1,3 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/\p{Lu}/).join
+# OMG WHY ARE YOU SHOUTING?
+puts ARGV[0].scan(/[A-Z]/).join

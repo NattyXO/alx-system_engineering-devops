@@ -1,21 +1,17 @@
-# 0x15. API
+# 0x15. API 
 
-All along, we have been writing shell scripts for cross-platform communication. In this project, I am introduced to <b>Application Programming Interfaces</b> which is simply a <i>software intermediary that allows two applications to talk to each other though defined interfaces.</i>
+## Resource
 
+- [Friends don’t let friends program in shell script](https://www.turnkeylinux.org/blog/friends-dont-let-friends-program-shell-script)
+- [What is an API](https://www.webopedia.com/definitions/api/)
+- [What is an API? In English, please](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/)
+- [What is a REST API](https://www.sitepoint.com/rest-api/)
+- [What are microservices](https://smartbear.com/solutions/microservices/)
+- [PEP8 Python style - having a clean code respecting style guide is really appreciated in the industry](https://www.python.org/dev/peps/pep-0008/)
 
-Concepts learnt:
-- What Bash scripting should not be used for
-- What is an API
-- What is a REST API
-- What are microservices
-- What is the CSV format
-- What is the JSON format
-- Pythonic Package and module name style
-- Pythonic Class name style
-- Pythonic Variable name style
-- Pythonic Function name style
-- Pythonic Constant name style
-- Significance of CapWords or CamelCase in Python
+## Tasks
 
-
-This directory contains python script I wrote with this [REST API](https://jsonplaceholder.typicode.com/)
+<details>
+<summary><a href="./0-gather_data_from_an_API.py">0. Gather data from an API</a></summary><br>
+<a href='https://postimg.cc/N5NpbXMC' target='_blank'><img src='https://i.postimg.cc/8zG9pBVG/image.png' border='0' alt='image'/></a>
+</details>

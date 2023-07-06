@@ -1,29 +1,29 @@
+# 0x11. What happens when you type holbertonschool.com in your browser and press Enter 
 
-#  What happens when you type google.com in your browser and press Enter
+<p align="center">
+  <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/298/aJPw3mw.jpg" />
+</p>
 
-When you type "google.com" in your browser, a complex process of communication between the browser, server, and various technologies takes place, resulting in the website being displayed on your screen. hashtag#communication hashtag#DNS hashtag#security hashtag#server hashtag#http hashtag#firewall 
+<details>
+<summary>Background Context</summary>
 
+- Being a Full-Stack Software Engineer means you’re comfortable interacting with any layer of the stack.
+- A way to easily assess this is to simply ask an engineer to explain how a software system works. They can have a general overview of the flow or can choose to dig deep in a certain area.
+- Let’s practice by exploring the infrastructure side (network, servers, security…) of the question.
 
-## Authors
+</details>
 
-- [@Natnael Bizuneh](https://github.com/NattyXO)
+<details>
+<summary><a href="./0-blog_post">0. What happens when...</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/13hCTtVn/image.png' border='0' alt='image'/></a>
+</details>
 
+<details>
+<summary><a href="./1-what_happen_when_diagram">1. Everything's better with a pretty diagram</a></summary><br>
 
-## Documentation
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/52jxys2W/image.png' border='0' alt='image'/></a>
 
-[Documentation](https://www.linkedin.com/pulse/what-happens-when-you-type-googlecom-your-browser-press-bizuneh/)
+<img src="https://i.imgur.com/i9ivkdo.png" />
+<img src="https://i.imgur.com/R8R3sqC.png" />
 
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
-## Badges
-
-Git Hub Status [Content](https://camo.githubusercontent.com/593847c0b6762eb71262903869e6332ca693e055516040bd25c154ca33425f7d/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d4e61747479584f26)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
-
+</details>

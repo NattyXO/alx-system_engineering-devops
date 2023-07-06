@@ -1,21 +1,27 @@
 # Regular expression
-Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about how to build a regular expression.
+In this project, I built a regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties.
 
-## Technologies
-* Scripts written in Bash 4.3.11(1)
-* Tested on Ubuntu 20.04 LTS
+## Concepts
+### Regular Expression
+A regular expression, commonly called a “regexp”, is a sequence of characters that define a search pattern.  It is mainly for use in pattern matching with strings, or string matching (i.e. it operates like a “find and replace” command). While it is a very powerful tool, it is also very dangerous because of its complexity.
+Tasks
 
-## Files
+![alt](https://alx-intranet.hbtn.io/images/contents/sysadmin/concepts/29/regex_now_2_problems.jpg)
 
-| Filename | Description |
-| -------- | ----------- |
-| `0-simply_match_holberton.rb` | A regular expression that matches `School` |
-| `1-repetition_token_0.rb` | A regular expression that matches `hbttn` |
-| `2-repetition_token_1.rb` | A regular expression that matches `htn` and `hbtn` |
-| `3-repetition_token_2.rb` | A regular expression that matches `hbtn`, where the letter `t` can be replied |
-| `4-repetition_token_3.rb` | A regular expression that matches `hbtn` with or without `t` |
-| `5-beginning_and_end.rb` | A regular expression that matches with a word that starts with `h` and ends with `n` |
-| `6-phone_number.rb` | A regular expression that match with 10 digit phone number|
-| `7-OMG_WHY_ARE_YOU_SHOUTING.rb` | A regular expression that only matches capital letters |
-| `100-textme.rb` | Filters information of a log file |
-| `101-passed_linkedin_regex_challenge.jpg` | Result of Linkedin Regex Puzzle |
+One thing you have to be careful with is that different languages use different regexp engines. That means that a regexp in Python, for example, will be interpreted differently in Javascript:
+
+Regular expressions are everywhere and software engineers, no matter their positions, will have to use them during their careers. System administrators and DevOps are the ones using them the most because they are very handy for log parsing.
+
+Read about regexp:
+
+- http://www.regular-expressions.info/
+- http://www.w3schools.com/jsref/jsref_obj_regexp.asp Play with regexp (or compose them):
+- Ruby: http://rubular.com/
+- PHP/Javascript/Python: https://regex101.com/
+
+## Resources
+- [Regular expressions - basics](https://www.slideshare.net/neha_jain/introducing-regular-expressions)
+- [Regular expressions - advanced](https://www.slideshare.net/neha_jain/advanced-regular-expressions-80296518)
+- [Rubular is your best friend](https://rubular.com/)
+- [Use a regular expression against a problem: now you have 2 problems](https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/)
+- [Learn Regular Expressions with simple, interactive exercises](https://regexone.com/)

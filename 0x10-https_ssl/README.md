@@ -1,54 +1,32 @@
+# 0x10. HTTPS SSL 
 
-# HTTPS SSL
+<p align="center">
+  <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/276/FlhGPEK.png"/>
+</p>
 
-HTTPS (Hyper Text Transfer Protocol Secure) appears in the URL when a website is secured by an SSL certificate. The details of the certificate, including the issuing authority and the corporate name of the website owner, can be viewed by clicking on the lock symbol on the browser bar.
+## Resource
 
+- [What is HTTPS?](https://www.instantssl.com/http-vs-https)
+- [What are the 2 main elements that SSL is providing](https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html)
+- [HAProxy SSL termination on Ubuntu16.04](https://devops.ionos.com/tutorials/install-and-configure-haproxy-load-balancer-on-ubuntu-1604/)
+- [SSL termination](https://en.wikipedia.org/wiki/TLS_termination_proxy)
+- [Bash function](https://tldp.org/LDP/abs/html/complexfunct.html)
+- [How to Secure HAProxy with Let's Encrypt on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-secure-haproxy-with-let-s-encrypt-on-ubuntu-14-04)
+- [HAProxy SSL Termination](https://www.haproxy.com/blog/haproxy-ssl-termination/)
 
-## Authors
+## Tasks
 
-- [@NattyXO](https://github.com/NattyXO/alx-system_engineering-devops)
+<details>
+<summary><a href="./0-world_wide_web">0. World wide web</a></summary><br>
+<a href='https://postimg.cc/w3QxtHzN' target='_blank'><img src='https://i.postimg.cc/Y2Jvsqyd/image.png' border='0' alt='image'/></a>
+</details>
 
+<details>
+<summary><a href="./1-haproxy_ssl_termination">1. HAproxy SSL termination</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/jSy72SG2/image.png' border='0' alt='image'/></a>
+</details>
 
-## Badges
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
-
-
-## Lessons Learned
-
-What is HTTPS SSL 2 main roles
-
-What is the purpose encrypting traffic
-
-What SSL termination means
-
-
-## Usage/Examples
-
-```bash
-sylvain@ubuntu$ dig www.holberton.online | grep -A1 'ANSWER SECTION:'
-;; ANSWER SECTION:
-www.holberton.online.   87  IN  A   54.210.47.110
-sylvain@ubuntu$ dig lb-01.holberton.online | grep -A1 'ANSWER SECTION:'
-;; ANSWER SECTION:
-lb-01.holberton.online. 101 IN  A   54.210.47.110
-sylvain@ubuntu$ dig web-01.holberton.online | grep -A1 'ANSWER SECTION:'
-;; ANSWER SECTION:
-web-01.holberton.online. 212    IN  A   34.198.248.145
-sylvain@ubuntu$ dig web-02.holberton.online | grep -A1 'ANSWER SECTION:'
-;; ANSWER SECTION:
-web-02.holberton.online. 298    IN  A   54.89.38.100
-sylvain@ubuntu$
-sylvain@ubuntu$
-sylvain@ubuntu$ ./0-world_wide_web holberton.online
-The subdomain www is a A record and points to 54.210.47.110
-The subdomain lb-01 is a A record and points to 54.210.47.110
-The subdomain web-01 is a A record and points to 34.198.248.145
-The subdomain web-02 is a A record and points to 54.89.38.100
-sylvain@ubuntu$
-sylvain@ubuntu$ ./0-world_wide_web holberton.online web-02
-The subdomain web-02 is a A record and points to 54.89.38.100
-sylvain@ubuntu$
-```
+<details>
+<summary><a href="./100-redirect_http_to_https">2. No loophole in your website traffic</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Njtg78N1/image.png' border='0' alt='image'/></a>
+</details>
